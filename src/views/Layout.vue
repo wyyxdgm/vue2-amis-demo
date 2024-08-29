@@ -2,13 +2,13 @@
   <div class="app-wrapper">
     <el-container>
       <el-container>
-        <el-aside :class="{ collapse: sidebarCollapse }" id="main-aside">
-          <sidebar :is-collapse="sidebarCollapse"></sidebar>
-        </el-aside>
+        <el-header id="main-header" style="padding:0;">
+          <navbar :is-collapse="sidebarCollapse"></navbar>
+        </el-header>
         <el-container :class="{ collapse: sidebarCollapse }">
-          <!-- <el-header id="main-header">
-            <navbar :is-collapse="sidebarCollapse"></navbar>
-          </el-header> -->
+          <el-aside :class="{ collapse: sidebarCollapse }" id="main-aside">
+            <sidebar :is-collapse="sidebarCollapse"></sidebar>
+          </el-aside>
           <el-main id="main-container">
             <transition name="fade" mode="out-in">
               <router-view></router-view>

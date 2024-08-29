@@ -22,3 +22,11 @@ export default {
   },
 };
 </script>
+<style>
+.navbar {
+  background-color: rgba(43, 92, 238, 0.715);
+  height: 100%;
+  line-height: 60px;
+  padding: 0 20px;
+}
+</style>

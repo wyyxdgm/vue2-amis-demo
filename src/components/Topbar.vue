@@ -9,7 +9,7 @@ export default {
   name: "Topbar",
   data() {
     return {
-      systemName: "Demo",
+      systemName: "systemName",
     };
   },
   computed: {},
